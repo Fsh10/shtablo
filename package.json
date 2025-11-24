@@ -10,7 +10,8 @@
     "sanity": "sanity dev",
     "sanity-import": "sanity dataset import lib/sanity/data/production.tar.gz production",
     "sanity-export": "sanity dataset export production lib/sanity/data/production.tar.gz",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "git push && echo '✅ Изменения отправлены в репозиторий. Netlify автоматически запустит деплой.'"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.18",
