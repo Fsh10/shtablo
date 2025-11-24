@@ -1,4 +1,4 @@
-import type { StructureResolver } from 'sanity/structure'
+import type { StructureResolver } from 'sanity/desk'
 import { CogIcon } from '@sanity/icons'
 import settings from './schemaTypes/settings'
 
