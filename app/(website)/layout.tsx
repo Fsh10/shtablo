@@ -5,10 +5,10 @@ import Navbar from "@/components/navbar";
 
 async function sharedMetaData(params) {
   const settings = await getSettings();
+  const siteUrl = settings?.url || process.env.NEXT_PUBLIC_SITE_URL || 'https://your-site.netlify.app';
 
   return {
-    // enable this for resolving opengraph image
-    // metadataBase: new URL(settings.url),
+    metadataBase: new URL(siteUrl),
     title: {
       default:
         settings?.title ||
