@@ -6,7 +6,7 @@
 
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
+import {deskTool} from 'sanity/desk'
 import {table} from '@sanity/table'
 import {codeInput} from '@sanity/code-input'
 import {unsplashImageAsset} from 'sanity-plugin-asset-source-unsplash'
@@ -24,7 +24,7 @@ export default defineConfig({
   // Add and edit the content schema in the './sanity/schemaTypes' folder
   schema,
   plugins: [
-    structureTool({structure}),
+    deskTool({structure}),
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
