@@ -24,7 +24,7 @@ const IframePreview = (props: IframePreviewProps) => {
       }}
       display="block"
       position="relative"
-      frameBorder="0"
+      frameBorder={0}
       allowFullScreen
       loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
